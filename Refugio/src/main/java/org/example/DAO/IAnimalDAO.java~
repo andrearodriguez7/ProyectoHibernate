@@ -1,0 +1,15 @@
+package org.example.DAO;
+
+import org.example.entities.Animal;
+
+import java.util.List;
+
+public interface IAnimalDAO {
+    void save(Animal animal);
+    Animal findById(String nombre);
+    List<Animal> findByEspecie(String especie);
+    List<Animal> findAll();
+    void update(Animal animal);
+    void delete(Animal animal);
+}
+
